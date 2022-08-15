@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="./css/styles.css">
+     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+
+    <h1 >Clon de twitter</h1>
+<div id="app">
+    
+</div>
+    <script type="text/babel">
+        
+        const $app = document.getElementById('app');
+        const useState = React.useState;
+
+        const  Contador  = params => {
+  
+    return(
+    <div>  
+        <div className ={"nav"}>
+            
+            </div>
+            <div className={"menuPersonal"}>
+                <img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" alt=""  className={"notif , logo"} size="small"/><br/><br/>
+                <ul className={"listtwt"}>
+                    
+                    
+                <li><img src="./images/home.png"  className={"notif"} alt="" /> Inicio  </li><br/><br/>
+                <li><img src="https://cdn-icons-png.flaticon.com/512/1330/1330140.png"  className={"notif"} alt=""/> Explorar </li>
+               <li> <img src="https://img.icons8.com/external-others-inmotus-design/344/external-Bell-bell-ring-others-inmotus-design-2.png"  className={"notif"} alt=""/> Notifications</li> 
+                <li><img src="https://img.icons8.com/ios-filled/344/secured-letter--v1.png" alt="" className={"notif"} /> Notifications </li>
+               <li> <img src="https://img.icons8.com/ios-filled/344/bookmark-ribbon.png" alt="" className={"notif"} /> Guardados </li>
+                <li><img src="https://img.icons8.com/windows/344/shortlist.png" alt="" className={"notif"} />Listas</li> 
+                <li><img src='https://randomuser.me/api/portraits/women/4.jpg' className={"foto , notif"} alt=""/> Perfil</li> 
+                <li><img src="https://img.icons8.com/sf-black/344/more.png" alt="" className={"notif"} /> Mas opciones</li>  
+                    
+                    
+                    
+                    </ul>
+                
+                
+                </div>
+            <div className={"wall"}>
+                <div className={"quepienasas"}>
+                    <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="" className={"quepienasasImg"}/>
+                    <input type="text"className={"quepienasasinput"} placeholder="Que estas pensando"/>
+                    </div>
+                    <div className={"twitt"}>
+                        <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="" className={"imgTwitt"}/><p className={"nombretwitt"}>Ana </p>
+                        <p className={"conttwit"}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam modi ipsum aliquid architecto dolores suscipit ipsa asperiores quia repudiandae voluptas cupiditate animi, ipsam exercitationem in a illo blanditiis, delectus quam!</p>
+                        <img src="./images/like.png" alt="megusta" className={"btntwitt"} onClick={event => event.target.classList.toggle('like1')}/> <img src="https://img.icons8.com/ios/2x/retweet.png" alt="retwit"className={"btntwitt"} onClick={event => event.target.classList.toggle('retwit')}/> <img src="https://img.icons8.com/ios/2x/share-2.png" className={"btntwitt"} onClick={event => event.target.classList.toggle('share')} alt="compartir"/>
+
+                        </div>
+                        <div className={"twitt"}>
+                        <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="" className={"imgTwitt"}/><p className={"nombretwitt"}>Lorem </p>
+                        <p className={"conttwit"}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam modi ipsum aliquid architecto dolores suscipit ipsa asperiores quia repudiandae voluptas cupiditate animi, ipsam exercitationem in a illo blanditiis, delectus quam!</p>
+                        <img src="https://img.icons8.com/ios/2x/like.png" alt="megusta"className={"btntwitt"} onClick={event => event.target.classList.toggle('like1')}/> <img src="https://img.icons8.com/ios/2x/retweet.png" alt="retwit"className={"btntwitt"} onClick={event => event.target.classList.toggle('retwit')} /> <img src="https://img.icons8.com/ios/2x/share-2.png" className={"btntwitt"} onClick={event => event.target.classList.toggle('share')} alt="compartir"/>
+
+                        </div><div className={"twitt"}>
+                        <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="" className={"imgTwitt"}/><p className={"nombretwitt"}>Micaela </p>
+                        <p className={"conttwit"}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam modi ipsum aliquid architecto dolores suscipit ipsa asperiores quia repudiandae voluptas cupiditate animi, ipsam exercitationem in a illo blanditiis, delectus quam!</p>
+                        <img src="https://img.icons8.com/ios/2x/like.png" alt="megusta"className={"btntwitt"} onClick={event => event.target.classList.toggle('like1')}/> <img src="https://img.icons8.com/ios/2x/retweet.png" alt="retwit"className={"btntwitt"} onClick={event => event.target.classList.toggle('retwit')} /> <img src="https://img.icons8.com/ios/2x/share-2.png" className={"btntwitt"} onClick={event => event.target.classList.toggle('share')} alt="compartir"/>
+
+                        </div><div className={"twitt"}>
+                        <img src="https://randomuser.me/api/portraits/women/58.jpg" alt="" className={"imgTwitt"}/><p className={"nombretwitt"}>Juana </p>
+                        <p className={"conttwit"}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam modi ipsum aliquid architecto dolores suscipit ipsa asperiores quia repudiandae voluptas cupiditate animi, ipsam exercitationem in a illo blanditiis, delectus quam!</p>
+                        <img src="https://img.icons8.com/ios/2x/like.png" alt="megusta"className={"btntwitt"} onClick={event => event.target.classList.toggle('like1')}/> <img src="https://img.icons8.com/ios/2x/retweet.png" alt="retwit"className={"btntwitt"} onClick={event => event.target.classList.toggle('retwit')} /> <img src="https://img.icons8.com/ios/2x/share-2.png" className={"btntwitt"} onClick={event => event.target.classList.toggle('share')} alt="compartir"/>
+
+                        </div>
+                </div>
+            <div className={"sugerencias"}>
+                <input type="text " placeholder=" Buscar"/>
+
+            <div >
+                <h3>Tendencias para ti</h3>
+                <ul className={"trendintopic"}>
+                    <li>
+                    <p>#Twitter</p>
+                    </li>
+                    <li>
+                    <p>#Twitter</p>
+                    </li> <li>
+                    <p>#Twitter</p>
+                    </li> <li>
+                    <p>#Twitter</p>
+                    </li></ul>
+               
+                </div>
+                <div className={"sugerenciasT"}>
+                    <ul className={"sugerenciasul"}>
+                    <li>
+                        <img src="https://randomuser.me/api/portraits/women/24.jpg" alt=""/> Maria
+                        </li>
+                        <li>
+                        <img src="https://randomuser.me/api/portraits/women/56.jpg" alt=""/> Mari Carmen
+                        </li><li>
+                        <img src="https://randomuser.me/api/portraits/women/55.jpg" alt=""/> Josefa
+                        </li>
+                        <li>
+                        <p>Conoce mas</p>
+                        </li>
+                    </ul>
+                    </div>
+                
+                
+                
+                </div>
+            
+    </div> 
+    )
+}
+const twittt = params => {
+    const src ='https://randomuser.me/api/portraits/women/${params.id}.jpg'
+    const nameTwitt = "Ana"
+    const contentTwitt = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam modi ipsum aliquid architecto dolores suscipit ipsa asperiores quia repudiandae voluptas cupiditate animi, ipsam exercitationem in a illo blanditiis, delectus quam!'
+    const like = 'https://img.icons8.com/ios/2x/like.png'
+    const retweet=  "https://img.icons8.com/ios/2x/retweet.png"
+    const share = 'https://img.icons8.com/ios/2x/share-2.png'
+
+    function Walltwitter(){
+      
+        
+    }
+    
+}
+
+ReactDOM.render(
+<div>
+   
+<Contador/>
+</div>, $app
+);
+
+    
+    </script>
+</body>
+</html>
